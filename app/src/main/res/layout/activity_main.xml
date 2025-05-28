@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/container"
+    android:background="#FFFFFFFF"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFFAFAFA">
+    android:layout_height="match_parent">
 
-    <!-- 数字时钟显示 -->
-    <TextView
-        android:id="@+id/tvClock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/_00_00_00"
-        android:textSize="64sp"
-        android:textColor="#FF333333"
-        android:fontFamily="monospace"
-        android:layout_gravity="center"/>
+    <com.example.clock.view.AnalogClockView
+        android:id="@+id/analogClock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </FrameLayout>
